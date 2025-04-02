@@ -1,12 +1,12 @@
 
 import { Link } from "react-router-dom";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
 
 const SuccessView = () => {
   return (
-    <>
+    <Card>
       <CardHeader>
         <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
           <CheckCircle className="h-8 w-8 text-green-500" />
@@ -33,7 +33,7 @@ const SuccessView = () => {
           </Link>
         </div>
       </CardContent>
-    </>
+    </Card>
   );
 };
 
